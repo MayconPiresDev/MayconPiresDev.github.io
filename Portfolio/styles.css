@@ -9,6 +9,7 @@
 body {
     background: #282a36;
     font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
 header {
@@ -32,4 +33,35 @@ header div a {
 header div a:hover {
     color: #50fa7b;
     transition: color 600ms;
+}
+
+#wrapper {
+    text-align: center;
+    padding: 32px;
+}
+
+#wrapper img {
+    border-radius: 50%;
+    border: 3px solid #7f3c94;
+    margin-bottom: 32px;
+}
+
+#wrapper h1 {
+    font-size: 42px;
+    line-height: 52px;
+}
+
+#wrapper h2 {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: normal;
+    margin-top: 8px;
+    opacity: 0.6;
+}
+
+#wrapper p {
+    max-width: 500px;
+    margin: 32px auto;
+    font-size: 24px;
+    line-height: 34px;
 }
