@@ -1,5 +1,10 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap";
 
+/* variaveis */
+:root {
+    --color-green: #50fa7b;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,20 +23,20 @@ header {
     background: rgba(0, 0, 0, 0.1);
 }
 
-header div {
+.links {
     text-align: center;
 }
 
-header div a {
+.links a {
     color: white;
-    font-size: 18px;
+    font-size: 26px;
     line-height: 28px;
     margin: 0 16px;
     text-decoration: none;
 }
 
-header div a:hover {
-    color: #50fa7b;
+.links a:hover {
+    color: var(--color-green);
     transition: color 600ms;
 }
 
@@ -44,6 +49,7 @@ header div a:hover {
     border-radius: 50%;
     border: 3px solid #7f3c94;
     margin-bottom: 32px;
+    height: 250px;
 }
 
 #wrapper h1 {
