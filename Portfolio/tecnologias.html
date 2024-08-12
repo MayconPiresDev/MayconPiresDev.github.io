@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Maycon Pires</title>
+    <link rel="stylesheet" href="tecno.css">
+    <script src="https://kit.fontawesome.com/14fecc8421.js" crossorigin="anonymous"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="links">
+            <a href="index.html">Sobre</a>
+            <a href="classes.html">Projetos</a>
+            <a href="tecnologias.html">Tecnologias</a>
+        </div>
+    </header>
+
+    <div id="wrapper">
+        <h1>Tecnologias</h1>
+    </div>
+
+    <section class="carousel-container">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" data-description="PHP: Uma linguagem de script amplamente utilizada para desenvolvimento web.">
+                    <div class="tool-content">
+                        <i class="fab fa-php" style="color: #787CB5;"></i>
+                        <p>PHP</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-description="Git: Um sistema de controle de versão distribuído.">
+                    <div class="tool-content">
+                        <i class="fab fa-git" style="color: #F05032;"></i>
+                        <p>Git</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-description="Docker: Uma plataforma para desenvolver, enviar e executar aplicativos em contêineres.">
+                    <div class="tool-content">
+                        <i class="fab fa-docker" style="color: #2496ED;"></i>
+                        <p>Docker</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-description="Node: Um ambiente de execução JavaScript baseado no motor V8 do Chrome.">
+                    <div class="tool-content">
+                        <i class="fab fa-node" style="color: #8CC84B;"></i>
+                        <p>Node</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-description="React: Uma biblioteca JavaScript para construção de interfaces de usuário.">
+                    <div class="tool-content">
+                        <i class="fab fa-react" style="color: #61DAFB;"></i>
+                        <p>React</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-description="JavaScript: Uma linguagem de programação usada para criar conteúdo dinâmico em websites.">
+                    <div class="tool-content">
+                        <i class="fab fa-js" style="color: #F7DF1E;"></i>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-description="TypeScript: Um superconjunto de JavaScript que adiciona tipos estáticos.">
+                    <div class="tool-content">
+                        <i class="fab fa-js-square" style="color: #007ACC;"></i>
+                        <p>TypeScript</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-description="DevOps: Conjunto de práticas que combina o desenvolvimento de software e operações de TI.">
+                    <div class="tool-content">
+                        <i class="fas fa-cogs" style="color: #5D5D5D;"></i>
+                        <p>DevOps</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-description="HTML: Linguagem de marcação para criar páginas web.">
+                    <div class="tool-content">
+                        <i class="fab fa-html5" style="color: #E34F26;"></i>
+                        <p>HTML</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-description="CSS: Linguagem de estilo para descrever a apresentação de documentos HTML.">
+                    <div class="tool-content">
+                        <i class="fab fa-css3-alt" style="color: #1572B6;"></i>
+                        <p>CSS</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-description="SQL: Linguagem de consulta estruturada para gerenciar e manipular bancos de dados relacionais.">
+                    <div class="tool-content">
+                        <i class="fas fa-database" style="color: #00758F;"></i>
+                        <p>SQL</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-description="npm: Gerenciador de pacotes para o ambiente Node.js.">
+                    <div class="tool-content">
+                        <i class="fab fa-npm" style="color: #CB3837;"></i>
+                        <p>npm</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="description">
+            <p id="tool-description">Selecione uma ferramenta para ver a descrição.</p>
+        </div>
+    </section>
+
+    <div class="footer-description">
+      <p>Utilizo uma ampla gama de ferramentas e tecnologias para a construção e manutenção eficaz dos sites. Com PHP, HTML, CSS e JavaScript, crio e personalizo cada site de acordo com as necessidades específicas de cada cliente, garantindo uma interface intuitiva e funcional. Ferramentas como Git e Docker são essenciais para o controle de versões e para o gerenciamento de ambientes de desenvolvimento, enquanto React e Node.js ajudam a construir aplicações dinâmicas e interativas. Com DevOps e SQL, otimizo o desempenho e a segurança dos sistemas, mantendo a integridade dos dados e a eficiência dos processos. Minha abordagem focada na manutenção contínua assegura que todos os recursos do site permaneçam atualizados e operacionais, proporcionando uma experiência de usuário robusta e sem interrupções.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const swiper = new Swiper('.swiper-container', {
+          slidesPerView: 'auto', // Show multiple slides at a time
+          spaceBetween: 10,
+          loop: true, // Enable looping of slides
+          autoplay: {
+            delay: 5000, // Change slide every 5 seconds
+            disableOnInteraction: false, // Keep autoplay running after user interactions
+          },
+          speed: 800, // Speed of slide transition
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          on: {
+            init: function () {
+              const slides = this.slides;
+              const middleIndex = Math.floor(slides.length / 2);
+              this.slideTo(middleIndex);
+            },
+          },
+        });
+      
+        // Pause autoplay on user interaction
+        swiper.el.addEventListener('mouseenter', () => {
+          swiper.autoplay.stop();
+        });
+      
+        swiper.el.addEventListener('mouseleave', () => {
+          swiper.autoplay.start();
+        });
+      
+        // Add click event listener to each slide
+        const slides = document.querySelectorAll('.swiper-slide');
+        const descriptionElement = document.getElementById('tool-description');
+      
+        slides.forEach(slide => {
+          slide.addEventListener('click', () => {
+            const description = slide.getAttribute('data-description');
+            descriptionElement.textContent = description;
+          });
+        });
+      });
+      
+    </script>
+</body>
+
+</html>

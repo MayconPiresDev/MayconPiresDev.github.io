@@ -1,0 +1,188 @@
+/* General styles */
+body {
+  background-color: #282a36;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  padding: 16px;
+  border-bottom: 1px solid #333;
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.links a {
+  color: white;
+  font-size: 18px;
+  margin: 0 16px;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: #50fa7b;
+  transition: color 300ms;
+}
+
+/* Wrapper */
+#wrapper {
+  margin-top: 80px; /* Adjust for header height */
+  text-align: center;
+}
+
+h1 {
+  color: #50fa7b;
+  font-size: 36px;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Carousel Container */
+.carousel-container {
+  max-width: 400px; /* Decreased width */
+  width: 100%;
+  margin: 40px auto;
+  text-align: center;
+  position: relative;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 150px; /* Decreased height */
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px; /* Smaller font size */
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 120px; /* Decreased width */
+  height: 120px; /* Decreased height */
+  margin: 0 10px; /* Space between slides */
+}
+
+
+.tool-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tool-content i {
+  font-size: 40px; /* Decreased icon size */
+  margin-bottom: 5px; /* Adjusted space between icon and text */
+}
+
+.tool-content p {
+  margin: 0;
+  font-size: 12px; /* Smaller font size */
+}
+
+/* Description */
+.description {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #50fa7b;
+  text-align: center;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  max-width: 400px; /* Decreased width */
+  margin: 30px auto;
+}
+
+/* Swiper Navigation */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  opacity: 0; /* Hide navigation buttons */
+  pointer-events: none; /* Prevent interaction */
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+/* Pagination */
+.swiper-pagination {
+  bottom: 10px !important;
+  text-align: center;
+}
+
+
+/* Swiper Styles */
+.swiper-container {
+  width: 100%;
+  height: 100px; /* Ajuste a altura conforme necessário */
+}
+
+.tool-content {
+  text-align: center;
+}
+
+.tool-content i {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.tool-content p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Footer Description Styles */
+.footer-description {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-description p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #f7f1f1;
+  margin: 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}

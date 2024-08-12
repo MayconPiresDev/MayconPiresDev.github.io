@@ -198,3 +198,49 @@ iframe {
 .card:nth-child(6) .card__content {
     animation-delay: 1.2s;
 }
+
+
+body {
+    background: #282a36;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.carousel-container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.swiper-slide {
+    background: #7159c1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.swiper-slide:hover {
+    background: #50fa7b;
+}
+
+.description {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.description p {
+    margin: 0;
+}
